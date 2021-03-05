@@ -12,24 +12,10 @@ function generate_sequence(){
 	document.getElementById('showSequence').innerHTML = "";
 	
 	var characterSet = document.getElementById('charSequence').value;
-	var startRange = parseInt(document.getElementById('startRange').value);
-	var endRange = parseInt(document.getElementById('endRange').value);
+	var range = [parseInt(document.getElementById('startRange').value), parseInt(document.getElementById('endRange').value)]
 	
-	var min = 0;
-	var max = 0;
-	
-	if(startRange > endRange){
-		min = endRange;
-		max = startRange;
-	}
-	else if(endRange > startRange){
-		max = endRange;
-		min = startRange;
-	}
-	else{
-		min = startRange;
-		max = startRange;
-	}
+	var min = Math.min.apply(null, range);
+	var max = Math.max.apply(null, range);
 	
 	var sequenceLength = parseInt(Math.random()* (max - min) + min);
 	
