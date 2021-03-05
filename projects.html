@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+		<script type="text/javascript" src="actions.js"></script>
+		<title>metaxal's blog</title>
+	</head>
+	<body>
+		<header>
+			<nav id="webNav">
+				<a id="leftNav" class="navHover" href="index.html">About</a>
+				<a class="navHover" href="projects.html">Projects</a>
+				<a id="rightNav" class="navHover">Thoughts</a>
+			</nav>
+			<hr id="navLine"/>
+		</header>
+		
+		<main class="textBlock">
+			<section id="introProjects">
+			Like I said in the "About"-page, I will put some projects here for people to use or just to have fun with.
+			Install inscructions, manuals, etc. will all be availabe aswell! (Just click on the names of the projects to hide/show their description.)
+			</section>
+			
+			<article>
+				<h1><u>List of Tools</u></h1>
+				<dl>
+					<dt class="projectName" onclick="clap_description(this)"><button><h2>Random Character Generator</h2></button></dt>
+					<dd class="hide-tools-decription">
+					Creates a random sequence of characters that the user has given as input. <br/> <br/>
+					<form>						
+						This is your character list that will be used to generate the random sequence. <br/>
+						<textarea type="text" id="charSequence"></textarea> <br/>
+						For example: 1js82#p= <br/> <br/>
+						The length of the sequence will be a number between the given range of: <input type=number oninput="this.value =  !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" id="startRange"> - 
+																							    <input type=number oninput="this.value =  !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" id="endRange"> <br/> <br/>
+						<button onclick="generate_sequence()" type="button">GENERATE SEQUENCE</button>
+						<p id="showSequence"></p>
+					</form>
+					</dd>
+				</dl>
+			</article>
+		</main>
+	</body>
+</html>

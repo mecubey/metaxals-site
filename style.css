@@ -1,6 +1,26 @@
 body{
 	color : white;
 	font-family : Roboto;
+	background-color : #212121;
+	text-align : center;
+}
+
+a{
+	text-decoration: none; 
+}
+
+button{
+	background : none;
+    border : none;
+    margin : 0;
+    padding : 0;
+    cursor : pointer;
+	color : white;
+	font-family : Roboto;
+}
+
+button:hover{
+	color : red;
 }
 
 #navLine{
@@ -32,8 +52,37 @@ body{
 	color : red;
 }
 
-.aboutmeArt{
+.navHover:visited{
+	color : white;
+}
+
+.navHover:hover{
+	color : red;
+}
+
+.textBlock{
 	margin-left : 25%;
 	margin-right : 25%;
 	text-align : left;
+}
+
+#introProjects{
+	margin-top : 50px;
+	font-size : 20px;
+}
+
+.projectName:hover{
+	color : red;
+}
+
+.hide-tools-description{
+	display: none;
+}
+
+.show-tools-description{
+	display: block;
+}
+
+#showSequence{
+	word-wrap: break-word
 }
