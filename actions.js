@@ -28,3 +28,14 @@ function generate_sequence(){
 		} 
 	}
 }
+
+function test_python(){
+	$.ajax({
+		url: '/phpstuff/g_calc.php',
+		type : 'POST',
+		success : function(result){
+			console.log(result);
+			document.getElementById('testdiv').innerHTML = result;	
+		}
+	})
+}
