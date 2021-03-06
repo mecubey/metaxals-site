@@ -35,7 +35,7 @@ function test_python(){
 		type : 'POST',
 		success : function(result){
 			console.log(result);
-			document.getElementById('testdiv').innerHTML = result;	
+			document.getElementById('testdiv').src = "/images/math/"+result;	
 		}
 	})
 }

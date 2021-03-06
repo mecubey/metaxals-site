@@ -55,4 +55,6 @@ def plot_graph(x_start =  -5, x_stop = 5, amount_arg = 100000, pi_default = "def
     filename += ".png"
     print(filename)
     plt.savefig("/data/www/images/math/" + filename)
-    os.chmod("/data/www/images/math/" + filename, 0o777)
+    #os.chmod("/data/www/images/math/" + filename, 0o777)
+
+plot_graph()
