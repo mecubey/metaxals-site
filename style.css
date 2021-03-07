@@ -33,6 +33,22 @@ button:hover{
 	margin-right: auto;
 }
 
+a:link {
+	color : white;
+}
+
+a:visited{
+	color : white;
+}
+
+a:hover{
+	color: red; 
+}
+
+a:active{
+	color: red;
+}
+
 #webNav{
 	font-size : 200%;
 	margin-top : 50px; 
@@ -48,21 +64,6 @@ button:hover{
 	right : 30%;
 }
 
-.navHover:link{
-	color : white;
-}
-
-.navHover:hover{
-	color : red;
-}
-
-.navHover:visited{
-	color : white;
-}
-
-a:link{
-	color : white;
-}
 .textBlock{
 	margin-left : 25%;
 	margin-right : 25%;
