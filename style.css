@@ -48,6 +48,10 @@ button:hover{
 	right : 30%;
 }
 
+.navHover:link{
+	color : white;
+}
+
 .navHover:hover{
 	color : red;
 }
@@ -56,10 +60,9 @@ button:hover{
 	color : white;
 }
 
-.navHover:hover{
-	color : red;
+a:link{
+	color : white;
 }
-
 .textBlock{
 	margin-left : 25%;
 	margin-right : 25%;
@@ -71,15 +74,12 @@ button:hover{
 	font-size : 20px;
 }
 
-dt{
-	
-}
 .projectName:hover{
 	color : red;
 }
 
 .hide-tools-description{
-	display: none;
+	display : none;
 }
 
 .show-tools-description{

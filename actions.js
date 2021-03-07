@@ -1,10 +1,10 @@
 function clap_description(e){
-	var pclass = e.nextElementSibling.className; 
-	if(pclass  === "hide-tools-description"){
-		e.nextElementSibling.className = "show-tools-description";
+	var tool_desc = e.nextElementSibling; 
+	if(tool_desc.style.display  === "none"){
+		tool_desc.style.display = "block";
 	}
 	else{
-		e.nextElementSibling.className = "hide-tools-description";
+		tool_desc.style.display = "none";
 	}
 }
 
