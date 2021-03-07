@@ -54,6 +54,16 @@
 						Should the x-axis be divided into pi's? <input type="checkbox" id="ticks"/> <br/><br/>
 						Starting and end points on the y-axis: <input type=number oninput="this.value = -Math.abs(this.value)" id="y-startpoint"/>  - <input type=number oninput="this.value =  !!this.value && Math.abs(this.value) > 0 ? Math.abs(this.value) : null" id="y-endpoint"/> <br/><br/>
 						Your function that will be plotted: f(x) = <input type="text" id="function"> <br/> <br/>
+						Here is a list of all available arithmetic operators:
+						<ul>
+						<li>+ 	Addition 	x + y</li>
+						<li>- 	Subtraction 	x - y</li>
+						<li>* 	Multiplication 	x * y</li>	
+						<li>/ 	Division 	x / y</li>
+						<li>% 	Modulus 	x % y</li>
+						<li>** 	Exponentiation 	x ** y</li>
+						<li>// 	Floor division 	x // y</li>
+						</ul> <br/> <br/>
 						<button type="button" onclick="create_graph()()">
 						CREATE GRAPH</button> <br/> <br/>
 						<img id="show_graph" width="300" height="300">
