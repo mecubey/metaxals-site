@@ -29,13 +29,19 @@ function generate_sequence(){
 	}
 }
 
-function test_python(){
+function create_graph(){
+	document.cookie = "x-start="+String(document.getElementById('x-startpoint').value);
+	document.cookie = "x-end="+String(document.getElementById('x-endpoint').value);
+	document.cookie = "y-start="+String(document.getElementById('y-startpoint').value);
+	document.cookie = "y-end="+String(document.getElementById('y-endpoint').value);
+	document.cookie = "plot-function="+String(document.getElementById('function').value);
+	document.cookie = "x-ticks="+String($('#ticks').is(':checked'));
+
 	$.ajax({
 		url: '/phpstuff/g_calc.php',
 		type : 'POST',
 		success : function(result){
-			console.log(result);
-			document.getElementById('testdiv').src = "/images/math/"+result;	
+		document.getElementById('show_graph').src = "/images/math/"+result;	
 		}
 	})
 }
